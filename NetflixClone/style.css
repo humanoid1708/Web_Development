@@ -1,0 +1,119 @@
+*{
+    margin: 0;padding: 0;
+    font-family:"Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;;
+}
+.main{
+    background-image: url("media/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 80vh;
+    position: relative;
+}
+
+.main .back{
+    background-color: black;
+    height: 80vh;
+    width: 100%;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60vw;
+    margin: auto;
+    height: 80px;
+    position: relative;
+    z-index: 10;
+    padding: 0 50px;
+}
+
+nav img{
+    width: 150px;
+   
+
+}
+
+.main .content{
+    /* border: 5px solid rgb(28, 4, 248); */
+    color: white;
+    height: calc(100% - 80px);
+    width: 35%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600px;
+    font-size: 60px;
+    position: relative;
+    z-index: 10;
+}
+
+.main .content span{
+    padding: 20px;
+}
+
+.main .content> :nth-child(1){
+    font-weight: bolder;
+    font-size: 70pxpx;
+    text-align: center;
+}
+
+.main .content> :nth-child(2){
+    font-size: 25px;
+}
+
+.main .content> :nth-child(3 ){
+    font-size: 15px;
+}
+
+.btn{
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.btn-red{
+    background-color: red;
+}
+
+.btn-red-sm{
+    background-color: red;
+}
+
+.btn-black{
+    background-color: rgba(26, 25, 25, 0.801);
+    border: 0.5pt solid white;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* adds spacing between SVG and text */
+    padding: 8px 12px;
+}
+
+.buttoncon{
+    display: flex;
+
+}
+
+.long{
+    padding:  8px 110px 8px 15px;
+    cursor: text;
+}
+.main .line{
+    width: 100%;
+    background-color: red;
+}
