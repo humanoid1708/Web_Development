@@ -1,0 +1,12 @@
+.news { /*class*/
+    color: red;
+}
+
+#first { /*id*/
+    background: yellow;
+}
+
+.black {
+    background-color: grey
+    ;
+}

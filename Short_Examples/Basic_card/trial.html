@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card</title>
+  <style>
+    body {
+      background-color: gray;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: white;
+      width: 400px;
+      height: 600px;
+      border-radius: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .tags {
+      margin-top: 15px;
+    }
+    
+    .tags button {
+      margin-right: 10px;
+      border-radius: 50px;
+      padding: 5px 15px;
+      border: 2px solid gray;
+      background-color: white;
+      color: gray;
+      cursor: pointer;
+    }
+
+    h1 {
+      margin: 15px 0 10px 0;
+      padding-left: 10px;
+    }
+
+    h3 {
+      color: gray;
+      padding: 0 10px;
+    }
+
+    #btn2 {
+      display: block;
+      margin: 20px auto;
+      padding: 15px 30px;
+      border-radius: 50px;
+      background-color: rgb(187, 184, 236);
+      color: blue;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img src="https://cdn.pixabay.com/photo/2023/01/15/22/48/lake-7721285_1280.jpg" alt="Lake" />
+
+    <div class="tags">
+      <button>Nature</button>
+      <button>Lake</button>
+    </div>
+
+    <h1>Lorem, ipsum dolor.</h1>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis aspernatur voluptatibus!</h3>
+
+    <button id="btn2">Read More</button>
+  </div>
+</body>
+
+</html>

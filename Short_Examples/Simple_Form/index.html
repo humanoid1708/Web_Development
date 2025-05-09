@@ -1,0 +1,50 @@
+<!-- Class is used to give same attributes to many objects and id is used to give attributes to a unique object-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Google Forms</title>
+</head>
+<body>
+    <form action="post">
+        <div>
+            <label for="username">Enter name:</label>
+            <input type="text" name="user" id="username" placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="city">Enter city:</label>
+            <input type="text" name="city" id="city" placeholder="Enter your city">
+        </div>
+        <div>
+            Select gender:
+            <input type="radio" name="gender" id = "male" value = "male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id = "female" value = "female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="Comment">Enter your comment:</label>
+            <br> <!-- use less often-->
+            <textarea name="comment" id="comment" rows="3" placeholder="Enter your comment"></textarea>
+        </div>
+        <div>
+            <label for="fruits">Select a fruit: </label>
+            <select name="fruits" id="fruit">
+                <option value="apple">Apple</option>
+                <option value="apple">Mango</option>
+                <option value="apple">Guava</option>
+                <option value="apple">Litchi</option>
+            </select>
+        </div>
+        <div id = "first" class = "news">
+            <input type="checkbox" name="subs" id="subs">
+            <label for="subs">Subscribe to our newsletter</label>
+        </div>
+    </form>
+
+    <code class = "black">This is a block for code</code>
+    
+</body>
+</html>

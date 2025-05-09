@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 10px;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            background-color:  rgb(204, 233, 238);
+            height: 100vh;
+        }
+
+        .box {
+            border-radius: 20px;
+            box-sizing: border-box;
+            background-color: white;
+            border: 1px solid gray;
+            width: 400px;
+            height: 600px;
+            padding: 10px;
+            
+        }
+
+        .box img{
+            border-radius: 25px;
+            object-fit: cover;
+            width: 100%;
+            height: 250px;
+        }
+        .tagg {
+            margin-top: 15px;
+        }
+        .tag{
+            margin-right: 10px;
+            border-radius: 15px;
+            box-sizing: border-box;
+            border: 1px solid grey;
+            color: grey;
+            padding:5px 15px;
+            cursor: pointer;
+        }
+        h1 {
+            margin: 15px 0 10px 10px;
+            color: rgb(16, 40, 77);
+        }
+        p{  
+            color: grey;
+            margin: 15px;
+        }
+        .box button{
+            display: block;
+            margin: auto;
+            padding: 1px 30px;
+            background-color: rgb(176, 201, 230);
+            border-radius: 15px;
+            color: blue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Gentau_Pic_du_Midi_Ossau.jpg" alt="">
+        <div class="tagg">
+            <span class="tag">Nature</span>
+            <span class="tag">Lake</span>
+        </div>
+        
+        <h1>Lago di Braies</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, veniam repellat. Quae adipisci odit animi ipsum hic odio dolores repudiandae iusto distinctio, quas placeat natus dicta, impedit illum ipsam corporis.</p>
+        
+        <button><h4>Read More</h4></button>
+    </div>
+
+</body>
+
+</html>
