@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 120px 50px;
+            grid-template-rows: 80px 80px 80px;
+            align-items: center;
+        }
+        .item{
+            border: 2px solid red;
+            height: 44px;
+            width: 44px;
+            font-size: 40px;
+        }
+        .i2{
+            grid-row: 1/2;
+            /*from 1st row to starting of second row*/
+            grid-column: 1/2;
+        }
+
+        .cont2{
+            margin: 20px;
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+            "side article article"
+            "foot foot foot";
+        }
+
+        .cont2 *{
+            width: 100%;
+        }
+        .inav{
+            background-color: blue;
+            grid-area: nav;
+        }
+
+        .iside{
+            background-color: yellow;
+            grid-area: side;
+        }
+
+        .iarticle{
+            background-color: green;
+            grid-area: article;
+        }
+
+        .ifoot{
+            background-color: purple;
+            grid-area: foot;
+        }
+
+        .cont3{
+            margin: 20px;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            gap: 30px 15px;
+        }
+        
+        .cont3 *{
+            width: 100%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item i2">4</div>
+        <div class="item">5</div>
+    </div>
+
+    <div class="cont2">
+        <div class="item inav">1</div>
+        <div class="item iarticle">2</div>
+        <div class="item iside">4</div>
+        <div class="item ifoot">5</div>
+    </div>
+
+    <div class="cont3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item i2">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

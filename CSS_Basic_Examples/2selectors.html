@@ -1,0 +1,75 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Element Selector*/
+        div{
+            background-color: pink;
+        }
+        /* Class Selector  */
+        .red {
+            color: red;
+        }
+        /* ID selector  */
+        #green {
+            background-color: green;
+        }
+        /* Child Selector  */
+        div > p {
+            color: blue;
+            background-color: yellow;
+        }
+        /* Descendent Selector  */
+        div p {
+            color: blue;
+            background-color: yellow;
+        }
+        /* Universal Selector  */
+        *{
+            margin:0;
+            padding: 0;
+        }
+        /* Pseudo Selector  */
+        a:visited {
+            color: aqua;
+        }
+        a:link {
+            color: aqua;
+        }
+        a:active {
+            background-color: red;
+        }
+        a:hover {
+            background-color: orange;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="red">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi distinctio error odio alias libero obcaecati quam, aspernatur reiciendis iusto veniam.
+    </div>
+    <span class="red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis architecto eligendi reprehenderit aperiam enim reiciendis sed minima? Possimus, ipsam ex.
+    </span>
+    <br>
+    <span id="green">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid veritatis deserunt odio qui nam reiciendis distinctio quas at ducimus modi!
+    </span>
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, assumenda.
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita placeat voluptatem nesciunt non, doloribus libero.
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, corporis.
+                </p>
+            </article>
+        </p>
+    </div>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.instagram.com">Instagram</a>
+  </body>
+  </html>

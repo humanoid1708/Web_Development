@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont1{
+            margin: 30px;
+            border: 2px solid black;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cont2{
+            margin: 30px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* by default row */
+        }
+        .cont3{
+            margin: 30px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            /* align-items: center; */
+            flex-wrap: wrap;
+            /* by default row */
+            /* gap: 20px; */
+        }
+
+        .item{
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .o1{
+            background-color: red;
+            order: 1;
+        }
+
+        .align1{
+            background-color: green;
+            align-self: flex-end;
+        }
+
+        .align2{
+            background-color: yellow;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont1">
+        <div class="item align1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item align2">4</div>
+    </div>
+    <div class="cont2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class="cont3">
+        <div class="item o1">1</div>
+        <!-- default order of each item is 0 -->
+        <div class="item">2</div>
+        <div class="item">2</div>
+        <div class="item">2</div>
+        <div class="item">2</div>
+        <div class="item">2</div>
+        <div class="item">2</div>
+        <div class="item">2</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+</body>
+</html>

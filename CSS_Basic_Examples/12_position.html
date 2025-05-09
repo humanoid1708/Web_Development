@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            margin: 10px;
+            padding: 10px;
+            height: 300px;
+            width: 80vw;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+        .box1{
+            background-color: blue;
+            position: fixed;
+            z-index: 8;
+        }
+        .box2{
+            background-color: red;
+            position: relative;
+            top: 50px;
+            left: 40px;
+            z-index: 2;
+        }
+        .box3{
+            background-color: green;
+            position: relative;
+            z-index: 3;
+        }
+        .parent{
+            margin: 15px;
+            width: 350px;
+            height: 200px;
+            box-sizing: border-box;
+            border: 2px solid purple;
+            position: absolute;
+        }
+        .box4{
+            background-color: yellow;
+            width: 133px;
+            height: 80px;
+            top: 0px;
+            left: 0px;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="parent">
+        <div class="box box4"></div>
+    </div>
+
+</body>
+</html>
+
+<!-- position: sticky; -->
+ <!-- transform, filter, perspective -->

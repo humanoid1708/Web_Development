@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color: red;
+            --secolor: rgb(223, 73, 73);
+            --tercolor: rgb(214, 153, 153);
+        }
+
+        .box{
+            background-color: var(--color);
+        }
+
+        .cont {
+            background-color: var(--secolor);
+        }
+
+        .suit{
+            --tercolor: rgb(34, 130, 219); 
+            /* overwriting */
+            background-color: var(--tercolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, debitis.</h2>
+    </div>
+    <div class="cont">
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, excepturi?</h4>
+    </div>
+    <div class="suit">
+        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, molestias?</h6>
+    </div>
+</body>
+</html>
