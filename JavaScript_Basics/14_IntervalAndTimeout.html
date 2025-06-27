@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont {
+            margin: 14px;
+            padding: 14px;
+            background-color: yellow;
+        }
+        .box {
+            margin: 14px;
+            padding: 14px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">Hello</div>
+    <div class="box">Box</div>
+    <script>
+        function getRandom() {
+            let val1 = Math.floor(Math.random() *255);
+            let val2 = Math.ceil(Math.random() *255);
+            let val3 = Math.ceil(Math.random() *255);
+            return `rgb(${val1}, ${val2}, ${val3})`;
+        }
+        let a = setInterval(() => {
+            document.querySelector(".cont").style.background = getRandom();
+        }, 1000);
+        let b = setTimeout(() => {
+            document.querySelector(".box").style.background = getRandom();
+        }, 3000);
+
+        console.log(a)
+        console.log(b)
+        // a.clearInterval
+        // b.clearTimeout
+
+    </script>
+</body>
+</html>
