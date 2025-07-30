@@ -1,0 +1,90 @@
+.border {
+    border: 2px solid red;
+    margin: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space {
+    justify-content: space-between;
+}
+.items-center {
+    align-items: center;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.bg-grey {
+    background-color: #121212;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.m-1 {
+    margin: 4px;
+}
+
+.p-1 {
+    padding: 10px;
+}
+.img-gap {
+    gap: 10px;
+    padding-top: 14px;
+    padding-left: 10px;
+}
+
+.pl-1 {
+    padding-left: 27px;
+    padding-top: 20px;
+}
+
+.m-2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.m-3 {
+    margin-top: 10px;
+}
+
+.white-button {
+    background-color: white;
+    color: black;
+    padding: 13px 30px;
+    margin: 1px;
+    border-radius: 20px;
+    border: none;
+    font-size: medium;
+}
+
+.black-button {
+    background-color: black;
+    color: white;
+    padding: 13px 30px;
+    margin: 1px;
+    border-radius: 20px;
+    border: none;
+    font-size: medium;
+}
+
+.button {
+    display: flex;
+    gap: 7px;
+    
+}
