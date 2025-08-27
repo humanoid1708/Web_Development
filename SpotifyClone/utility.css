@@ -72,15 +72,33 @@
     border: none;
     font-size: medium;
 }
-
+.white-button:hover{
+    background-color: rgb(224, 229, 234);
+    cursor: pointer;
+    color: black;
+    padding: 14px 30px;
+    margin: 1px;
+    border-radius: 20px;
+    border: none;
+}
+ 
 .black-button {
     background-color: black;
-    color: white;
+    color: #6d6a6a;
     padding: 13px 30px;
     margin: 1px;
     border-radius: 20px;
     border: none;
-    font-size: medium;
+    font-size: 16px;
+}
+.black-button:hover {
+    color: rgb(173, 177, 180);
+    cursor: pointer;
+    padding: 13px 30px;
+    margin: 1px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16.5px;
 }
 
 .button {
@@ -89,10 +107,28 @@
     
 }
 
-.playbtn {
-    position: absolute;
-    top: 150px;
-    left: 150px;
-    opacity: 1;
-    transition: all 1s ease-out;
+
+::-webkit-scrollbar {
+  width: 10px;               /* Width of vertical scrollbar */
+  height: 10px;              /* Height of horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;       /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444;    /* Scrollbar handle color */
+  border-radius: 5px;        /* Rounded corners */
+  border: 2px solid #1e1e1e; /* Space between track and thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666;    /* Hover color */
+}
+
+/* Firefox Scrollbar (Dark Mode) */
+* {
+  scrollbar-width: thin;           /* auto | thin */
+  scrollbar-color: #444 #1e1e1e;   /* thumb | track */
 }
