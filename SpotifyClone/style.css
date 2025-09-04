@@ -1,10 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --a: 0;
+}
+
 body {
     background-color: black;
     color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container {
@@ -12,7 +20,7 @@ body {
 }
 
 .left {
-    width: 25vw;
+    width: 24vw;
     padding: 7px;
     position: relative;
 }
@@ -39,24 +47,26 @@ ul {
     min-height: 78.5vh;
     position: relative;
 }
+
 .footer {
     display: flex;
     font-size: 10px;
-    position : absolute;
+    position: absolute;
     bottom: 0;
     padding: 10px 10px 10px 0px;
     gap: 12 px;
-    
+
 }
-.footer a{
+
+.footer a {
     color: grey;
     text-decoration: none;
 }
 
-.nav *{
-  background: transparent;
-  border: none;
-  padding: 1px;
+.nav * {
+    background: transparent;
+    border: none;
+    padding: 1px;
 }
 
 .header {
@@ -64,33 +74,43 @@ ul {
     height: 40px;
 }
 
-.title > .span{
+.title>.span {
     font-size: 28px;
     padding: 5px;
     margin: 10px;
 }
-.playlist-container {
+
+.playlistContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin: 30px;
     overflow-y: auto;
     max-height: 72vh;
+
 }
+
 .card {
-    background-color: rgb(42, 41, 41);
+    background-color: #222222;
     /* padding: 7px;
     height: 270px; */
-    width: 190px;
+    width: 210px;
+    min-height: 290px;
     margin: 7px;
     border-radius: 5px;
     text-overflow: ellipsis;
     overflow: hidden;
     padding: 10px;
     position: relative;
+    transition: all 0.6s;
 }
 
-.playlist-container > .one {
+.card:hover {
+    background-color: rgb(53, 52, 52);
+    --a: 1;
+}
+
+.playlistContainer>.one {
     margin-left: 20px;
 }
 
@@ -100,8 +120,8 @@ ul {
     border-radius: 5px;
 }
 
-.card p{
-    font-size:12px;
+.card p {
+    font-size: 12px;
     color: gray;
 }
 
@@ -109,8 +129,8 @@ ul {
     position: absolute;
     bottom: 95px;
     right: 20px;
-    opacity: 1;
-    /* transition: all 1s ease-out; */
+    opacity: var(--a);
+    transition: all 0.4s ease-out;
 }
 
 .playbar {
@@ -121,9 +141,10 @@ ul {
     min-height: 80px;
     align-content: center;
     justify-content: center;
+    justify-self: center;
     border-radius: 500px;
     filter: invert(1);
-    
+
 }
 
 .songbtns {
@@ -148,7 +169,8 @@ ul {
     flex-direction: column;
     justify-content: center;
 }
-.songlist ul li{
+
+.songlist ul li {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -158,23 +180,36 @@ ul {
     cursor: pointer;
     border-radius: 10px;
     position: relative;
-    max-width: 340px;
+    width: 320px;
 }
 
 .playsonglist {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:5px;
+    gap: 5px;
     position: absolute;
     right: 7px;
     top: 14px;
 }
 
-.playsonglist img{
+.playsonglist img {
     width: 25px;
 }
 
+.soname {
+    max-width: 170px;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.artist {
+    opacity: 50%;
+}
+
+.sinfo {
+    width: 250px;
+}
 
 .seekbar {
     border: 1px solid black;
@@ -196,7 +231,7 @@ ul {
     cursor: pointer;
     position: relative;
     bottom: 9.5px;
-    left: 0% ;
+    left: 0%;
     transition: left 0.5s;
 }
 
@@ -215,12 +250,31 @@ ul {
     cursor: pointer;
 }
 
-.close{
+.close {
     display: none;
     position: absolute;
     top: 35px;
     right: 30px;
     width: 30px;
+    cursor: pointer;
+}
+
+.timevol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.range input {
     cursor: pointer;
 }
 
@@ -230,48 +284,70 @@ ul {
         z-index: 1;
         left: -120%;
         transition: all .5s;
-        width: 400px;
+        width: 430px;
         background-color: black;
+        justify-content: center;
+        padding: 0;
     }
+
     .p1-1 {
         padding: 0;
     }
+
     .right {
         width: 100vw;
         margin: 0;
     }
-    .playbar{
+
+    .playbar {
         width: 99vw;
     }
+
     .aboveseek {
         flex-direction: column;
         gap: 10px;
         padding: 10px;
     }
-    .seekbar{
+
+    .seekbar {
         width: 90%;
     }
+
     .hamburger {
         display: block;
     }
+
     .arrow {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .close {
         display: block;
     }
 
-    .playlist-container {
+    .playlistContainer {
         margin: 0;
         justify-content: center;
+        
     }
+
     .card {
         width: 80vw;
     }
+
     .playbtn {
         bottom: 60px;
         right: 25px;
+    }
+
+    .sinfo {
+        width: auto;
+    }
+
+    .timevol {
+        flex-direction: column;
+        gap: 10px;
     }
 }
